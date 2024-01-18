@@ -9,7 +9,7 @@ Andrew Hendricks
 
 This project is based on the Kaggle competition [Linking Writing Processes to Writing Quality](https://www.kaggle.com/competitions/linking-writing-processes-to-writing-quality).  
   
-The goal of the project is to use the data about each student's writing process to predict the score that they receive on their essay while minimizing rmse.  The challenge of the project is that the logs do not include any text from the essay, including the specific letters that each writer uses. The predictions have to be made only from the writing process behaviors.
+The goal of the project is to use the data about each student's writing process to predict the score that they receive on their essay while minimizing rmse.  The challenge of the project is that the logs do not include any text from the essay. The predictions have to be made only from writing process behaviors.
 
 ## Repository Navigation
 
