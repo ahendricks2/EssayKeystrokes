@@ -29,6 +29,8 @@ To summarize the Kaggle competition page, essay writers were hired from Amazon M
 The train data set for the competition includes scores for about 2.7k essays as well as a set of logs with thousands of records for each essay with over 8 million records total. The test data set is hosted on Kaggle and is not pupblicly available. The log features include the up and down time of each action, a label and a record for what occurs during each action, the cursor position, and the word count. The majority of essays in the training set had scores between 3 and 4.5, and the distribution of the scores was generally normal.
 
 
+![Score_Spread](https://github.com/ahendricks2/EssayKeystrokes/assets/141271148/f6c8d807-ea9e-4886-b9b6-3448ccb16c89)
+
 
 ## Data Analysis
 
