@@ -34,9 +34,19 @@ The train data set for the competition includes scores for about 2.7k essays as 
 
 ## Data Analysis
 
-While conducting exploratory data analysis, I uncovered the following trends in the data.
+While conducting exploratory data analysis, I found that features related to the volume of text created or actions performed tended to correlate with essay score.
 
+![Word_Count](https://github.com/ahendricks2/EssayKeystrokes/assets/141271148/29776065-1347-4c09-ba65-585f4e87db97)
 
+![Event_Count](https://github.com/ahendricks2/EssayKeystrokes/assets/141271148/c3677190-d13f-496e-926c-f998869bf7af)
+
+An analysis of pauses revealed a correlation between the amount of text produced per pause and the final score.
+
+![Characters_Per_Pause](https://github.com/ahendricks2/EssayKeystrokes/assets/141271148/c8b3180f-a75a-4b36-9488-4152beef1924)
+
+By contrast, there was not a substantial correlation between the percentage of time used for revision and the final score.
+
+![Revision](https://github.com/ahendricks2/EssayKeystrokes/assets/141271148/94320188-be71-476b-aacd-9015614700ad)
 
 
 ## Modeling and Evaluation
@@ -47,12 +57,16 @@ After hyperparameter tuning, the xgb model was my strongest model, performing sl
 
 At the end of the modeling process, I put my three strongest models into a stacking model to improve generalization on unseen data.
 
+<img width="158" alt="Final_Results" src="https://github.com/ahendricks2/EssayKeystrokes/assets/141271148/00987a36-a9d7-4e91-bbf9-e4c42458cc1d">
+
 
 ## Results and Conclusions
 
 My final model had cross-validation scores of .63 rmse and .61 r2. The test data scorer on Kaggle does not include r2, but my final rmse private score was .607.
 
-For the students, educators, and researchers who would be the main stakeholders for this project, it is interesting that the model was able to explain over 60% of the variance in essay scores without any access to the actual text of the essay.  While most analyses of essay quality may focus on features like the quality of the argument or the use of evidence, it is useful to know that factors like word count and character count have predictive importance for the score of the essay as well.
+For the students, educators, and researchers who would be the main stakeholders for this project, it is interesting that the model was able to explain over 60% of the variance in essay scores without any access to the actual text of the essay.  While most analyses of essay quality may focus on features like the quality of the argument or the use of evidence, it is useful to know that factors related purely to writing process have predictive importance for the score of the essay as well.
+
+![Feature_Importance](https://github.com/ahendricks2/EssayKeystrokes/assets/141271148/bf33ba5d-f66a-46c3-8981-325fe6ca15d1)
 
 After the second round of feature selection and feature engineering, word_count and character count remained the two features with the highest predictive importance. The number of input events was also in the top 5 of feature importance. For essay writers, educators, and researchers, this suggests that more is usually more.  Writers who produce more words and characters tend to earn higher scores on their essays.
 
