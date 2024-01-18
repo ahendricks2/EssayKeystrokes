@@ -17,7 +17,7 @@ The goal of the project is to use the data about each student's writing process 
 
 [Notebook 2](https://github.com/ahendricks2/EssayKeystrokes/blob/main/Modeling_Notebook.ipynb): Contains modeling, a second round of feature selection and engineering, and results, conclusions and next steps
 
-Tableau Dashboard
+[Non-Technical Presentation](https://docs.google.com/presentation/d/1y_g_qGL9L35e6C5tul215TAF6iLZ1nu2zQMeINit31M/edit?usp=sharing)
 
 
 ## Business Problem and Data Understanding
