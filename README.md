@@ -66,7 +66,7 @@ My final model had cross-validation scores of .63 rmse and .61 r2. The test data
 
 For the students, educators, and researchers who would be the main stakeholders for this project, it is interesting that the model was able to explain over 60% of the variance in essay scores without any access to the actual text of the essay.  While most analyses of essay quality may focus on features like the quality of the argument or the use of evidence, it is useful to know that factors related purely to writing process have predictive importance for the score of the essay as well.
 
-![Feature_Importance](https://github.com/ahendricks2/EssayKeystrokes/assets/141271148/bf33ba5d-f66a-46c3-8981-325fe6ca15d1)
+![Feature_Importance1](https://github.com/ahendricks2/EssayKeystrokes/assets/141271148/d6b70d49-97bf-4f09-a50d-ef014689fb3e)
 
 After the second round of feature selection and feature engineering, word_count and character count remained the two features with the highest predictive importance. The number of input events was also in the top 5 of feature importance. For essay writers, educators, and researchers, this suggests that more is usually more.  Writers who produce more words and characters tend to earn higher scores on their essays.
 
